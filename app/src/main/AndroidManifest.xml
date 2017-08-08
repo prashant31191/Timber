@@ -22,6 +22,7 @@
         android:theme="@style/AppTheme.FullScreen.Light"
         tools:replace="android:allowBackup, android:label">
 
+        <!--android:label="Timber${appNameSuffix}"-->
         <activity
             android:name=".activities.MainActivity"
             android:label="Timber${appNameSuffix}"
@@ -107,9 +108,9 @@
         </service>
 
         <!--use your own api key for fabric-->
-        <meta-data
+      <!--  <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="@string/fabric_api_key" />
+            android:value="@string/fabric_api_key" />-->
 
         <receiver android:name=".widgets.desktop.StandardWidget" android:label="@string/widget_standard">
             <intent-filter>
